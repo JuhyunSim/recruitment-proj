@@ -70,6 +70,7 @@ public class RecruitService {
         return recruitmentEntity.update(request).toDto();
     }
 
+    @Transactional
     public void deleteRecruitment(Long recruitmentId,
                                   RecruitmentDto.Request request) {
         RecruitmentEntity recruitmentEntity =
