@@ -4,20 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5b57ea6-86b9-45c8-b0d5-2e93b9a9b7bd" name="Changes" comment="feat : 001 Main-Setting : 프로젝트 기본 설정 및 엔티티 세팅">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zerobase/recruitment/DataInit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zerobase/recruitment/dto/RecruitmentDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zerobase/recruitment/enums/MemberStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zerobase/recruitment/repository/CompanyMemberRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zerobase/recruitment/repository/MemberRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zerobase/recruitment/repository/RecruitmentRepository.java" afterDir="false" />
+    <list default="true" id="f5b57ea6-86b9-45c8-b0d5-2e93b9a9b7bd" name="Changes" comment="feat : 002 Recruit-CRUD : 채용 공고 저장, 조회, 수정, 삭제 기능 구현">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zerobase/recruitment/dto/EducationDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zerobase/recruitment/dto/ResumeDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zerobase/recruitment/repository/ResumeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.8/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zerobase/recruitment/controller/RecruitmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zerobase/recruitment/controller/RecruitmentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zerobase/recruitment/entity/CompanyMemberEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zerobase/recruitment/entity/CompanyMemberEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zerobase/recruitment/entity/MemberEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zerobase/recruitment/entity/MemberEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zerobase/recruitment/entity/RecruitmentEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zerobase/recruitment/entity/RecruitmentEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/zerobase/recruitment/controller/ResumeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/zerobase/recruitment/controller/ResumeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/zerobase/recruitment/entity/Education.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/zerobase/recruitment/entity/Education.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/zerobase/recruitment/entity/ResumeEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/zerobase/recruitment/entity/ResumeEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/zerobase/recruitment/enums/Degree.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/zerobase/recruitment/enums/Degree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/zerobase/recruitment/repository/MemberRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/zerobase/recruitment/repository/MemberRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/zerobase/recruitment/service/RecruitService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/zerobase/recruitment/service/RecruitService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/zerobase/recruitment/service/ResumeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/zerobase/recruitment/service/ResumeService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zerobase/recruitment/controller/ResumeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zerobase/recruitment/controller/ResumeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zerobase/recruitment/entity/Education.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zerobase/recruitment/entity/Education.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zerobase/recruitment/entity/ResumeEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zerobase/recruitment/entity/ResumeEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zerobase/recruitment/enums/Degree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zerobase/recruitment/enums/Degree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zerobase/recruitment/repository/MemberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zerobase/recruitment/repository/MemberRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zerobase/recruitment/service/RecruitService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zerobase/recruitment/service/RecruitService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zerobase/recruitment/service/ResumeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zerobase/recruitment/service/ResumeService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +64,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
@@ -70,7 +88,7 @@
     &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;Spring Boot.RecruitmentApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;001-Recruit-CRUD&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/user/Documents/programming_file/server/spring-project/recruitment-proj&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -122,7 +140,8 @@
       <workItem from="1718349527995" duration="703000" />
       <workItem from="1718438023730" duration="413000" />
       <workItem from="1718438443414" duration="3901000" />
-      <workItem from="1718462277938" duration="10411000" />
+      <workItem from="1718462277938" duration="19502000" />
+      <workItem from="1718607833452" duration="3248000" />
     </task>
     <task id="LOCAL-00001" summary="feat : 001 Main-Setting : 프로젝트 기본 설정 및 엔티티 세팅">
       <option name="closed" value="true" />
@@ -132,7 +151,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718349586691</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat : 002 Recruit-CRUD : 채용 공고 저장, 조회, 수정, 삭제 기능 구현">
+      <option name="closed" value="true" />
+      <created>1718514274385</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1718514274385</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -151,6 +178,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat : 001 Main-Setting : 프로젝트 기본 설정 및 엔티티 세팅" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat : 001 Main-Setting : 프로젝트 기본 설정 및 엔티티 세팅" />
+    <MESSAGE value="feat : 002 Recruit-CRUD : 채용 공고 저장, 조회, 수정, 삭제 기능 구현" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat : 002 Recruit-CRUD : 채용 공고 저장, 조회, 수정, 삭제 기능 구현" />
   </component>
 </project>
