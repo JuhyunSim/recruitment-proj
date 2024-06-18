@@ -9,6 +9,7 @@ import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Entity(name = "recruitment")
 @Getter
@@ -35,6 +36,9 @@ public class RecruitmentEntity {
     @JoinColumn(name = "company_member_id")
     private CompanyMemberEntity companyMember;
 
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "recruitment")
+    private List<ApplicationEntity> applicationEntity;
+
     @Builder
     public RecruitmentEntity(
             String title,
@@ -50,6 +54,10 @@ public class RecruitmentEntity {
 
     public void opening() {
         this.status = RecruitmentStatus.OPEN;
+    }
+
+    public void closing() {
+        this.status = RecruitmentStatus.CLOSE;
     }
 
     public RecruitmentDto.Response toDto() {

@@ -1,6 +1,7 @@
 package com.zerobase.recruitment.controller;
 
 import com.zerobase.recruitment.dto.ApplicationDto;
+import com.zerobase.recruitment.dto.FinishedDto;
 import com.zerobase.recruitment.dto.RecruitmentDto;
 import com.zerobase.recruitment.service.RecruitService;
 import lombok.RequiredArgsConstructor;
@@ -61,5 +62,13 @@ public class RecruitmentController {
             @RequestParam(name = "companyMemberId") Long companyMemberId
     ) {
         return recruitService.getApplicationList(recruitmentId, companyMemberId);
+    }
+
+    @PutMapping("/recruitments/{id}/finished")
+    public void finishedRecruitment(
+            @PathVariable(name = "id") Long recruitmentId,
+            @RequestBody FinishedDto request
+    ) {
+        recruitService.finishRecruitment(recruitmentId, request.getCompanyMemberId());
     }
 }

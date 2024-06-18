@@ -43,4 +43,12 @@ public class ApplicationEntity {
         this.recruitment = recruitmentEntity;
         this.resume = resumeEntity;
     }
+
+    public void pass() {
+        this.status = ApplicationStatus.PASS;
+    }
+
+    public void fail() {
+        this.status = ApplicationStatus.FAIL;
+    }
 }
