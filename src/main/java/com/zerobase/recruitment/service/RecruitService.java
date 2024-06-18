@@ -1,9 +1,11 @@
 package com.zerobase.recruitment.service;
 
+import com.zerobase.recruitment.dto.ApplicantInfo;
 import com.zerobase.recruitment.dto.ApplicationDto;
 import com.zerobase.recruitment.dto.RecruitmentDto;
 import com.zerobase.recruitment.entity.*;
 import com.zerobase.recruitment.enums.ApplicationStatus;
+import com.zerobase.recruitment.enums.EducationLevel;
 import com.zerobase.recruitment.enums.RecruitmentStatus;
 import com.zerobase.recruitment.repository.*;
 import lombok.RequiredArgsConstructor;
@@ -11,9 +13,13 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.time.LocalDateTime;
+import java.lang.constant.ConstantDesc;
+import java.util.Comparator;
 import java.util.List;
+import java.util.Map;
 import java.util.Objects;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 @Service
 @RequiredArgsConstructor
@@ -108,6 +114,7 @@ public class RecruitService {
         applicationRepository.save(applicationEntity);
     }
 
+    @Transactional(readOnly = true)
     public List<ApplicationDto.Response> getApplicationList(
             Long recruitmentId, Long companyMemberId
     ) {
@@ -128,5 +135,44 @@ public class RecruitService {
                         .educationList(e.getResume().toDto().getEducationList())
                         .memberName(e.getResume().getMember().getName())
                         .build()).toList();
+    }
+
+    @Transactional
+    public void finishRecruitment(ConstantDesc recruitmentId, Long companyMemberId) {
+        //공고 존재여부 확인
+        RecruitmentEntity recruitmentEntity = recruitmentRepository.findByIdAndStatusAndCompanyMemberId(
+                recruitmentId, RecruitmentStatus.OPEN, companyMemberId).orElseThrow(
+                () -> new RuntimeException("공고 정보가 없습니다.")
+        );
+
+        //공고 상태 변경(open -> close)
+        recruitmentEntity.closing();
+
+        //지원자 정보 가져오기
+        List<ApplicationEntity> applicationEntityList =
+                recruitmentEntity.getApplicationEntity();
+        //순위 매기기(지원자별 각 가장 높은 학위를 기준으로)
+        List<ApplicantInfo> applicantInfoList = applicationEntityList.stream()
+                .map(ApplicationEntity::getResume)
+                .map(r -> {
+                    Education education =
+                            r.getEducationList().stream()
+                                    .max(Comparator.comparing(
+                                            Education::getDegree)).orElse(Education.builder().build());
+                    return new ApplicantInfo(r.getId(), EducationLevel.findByCode(education.getCode()).getScore(education.getDegree()));
+                }).sorted(Comparator.comparing(ApplicantInfo::getScore).reversed()).toList();
+        //성능 향상으 위해 map으로 데이터 정리
+        Map<Long, Integer> applicantInfoMap =
+                IntStream.range(0, applicantInfoList.size()).boxed()
+                        .collect(Collectors.toMap(i -> applicantInfoList.get(i).getResumeId(), i -> i));
+        //모집인원 안에 들면 합격
+        applicationEntityList.forEach(a ->
+        {
+            if (applicantInfoMap.get(a.getResume().getId()) < recruitmentEntity.getRecruiterCount() ) {
+                a.pass();
+            } else {
+                a.fail();
+            }
+        });
     }
 }
