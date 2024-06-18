@@ -4,33 +4,40 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5b57ea6-86b9-45c8-b0d5-2e93b9a9b7bd" name="Changes" comment="feat : 002 Recruit-CRUD : 채용 공고 저장, 조회, 수정, 삭제 기능 구현">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zerobase/recruitment/dto/EducationDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zerobase/recruitment/dto/ResumeDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zerobase/recruitment/repository/ResumeRepository.java" afterDir="false" />
+    <list default="true" id="f5b57ea6-86b9-45c8-b0d5-2e93b9a9b7bd" name="Changes" comment="feat : 003 Resume-CRUD : 이력서 작성/저장, 조회, 수정, 삭제 기능 구현">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zerobase/recruitment/dto/ApplicationDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zerobase/recruitment/repository/ApplicationRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.8/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/zerobase/recruitment/controller/ResumeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/zerobase/recruitment/controller/ResumeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/zerobase/recruitment/controller/RecruitmentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/zerobase/recruitment/controller/RecruitmentController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/zerobase/recruitment/dto/EducationDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/zerobase/recruitment/dto/EducationDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/zerobase/recruitment/dto/ResumeDto$Request.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/zerobase/recruitment/dto/ResumeDto$Request.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/zerobase/recruitment/dto/ResumeDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/zerobase/recruitment/dto/ResumeDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/zerobase/recruitment/entity/ApplicationEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/zerobase/recruitment/entity/ApplicationEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/zerobase/recruitment/entity/Education$EducationBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/zerobase/recruitment/entity/Education$EducationBuilder.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/zerobase/recruitment/entity/Education.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/zerobase/recruitment/entity/Education.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/zerobase/recruitment/entity/ResumeEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/zerobase/recruitment/entity/ResumeEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/zerobase/recruitment/enums/Degree.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/zerobase/recruitment/enums/Degree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/zerobase/recruitment/repository/MemberRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/zerobase/recruitment/repository/MemberRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/zerobase/recruitment/enums/ApplicationStatus.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/zerobase/recruitment/enums/ApplicationStatus.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/zerobase/recruitment/repository/RecruitmentRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/zerobase/recruitment/repository/RecruitmentRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/zerobase/recruitment/repository/ResumeRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/zerobase/recruitment/repository/ResumeRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/zerobase/recruitment/service/RecruitService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/zerobase/recruitment/service/RecruitService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/zerobase/recruitment/service/ResumeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/zerobase/recruitment/service/ResumeService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/EducationListJsonConverter.class.uniqueId9" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zerobase/recruitment/controller/ResumeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zerobase/recruitment/controller/ResumeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zerobase/recruitment/controller/RecruitmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zerobase/recruitment/controller/RecruitmentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zerobase/recruitment/dto/EducationDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zerobase/recruitment/dto/EducationDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zerobase/recruitment/dto/ResumeDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zerobase/recruitment/dto/ResumeDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zerobase/recruitment/entity/ApplicationEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zerobase/recruitment/entity/ApplicationEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zerobase/recruitment/entity/Education.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zerobase/recruitment/entity/Education.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zerobase/recruitment/entity/ResumeEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zerobase/recruitment/entity/ResumeEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zerobase/recruitment/enums/Degree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zerobase/recruitment/enums/Degree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zerobase/recruitment/repository/MemberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zerobase/recruitment/repository/MemberRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zerobase/recruitment/enums/ApplicationStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zerobase/recruitment/enums/ApplicationStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zerobase/recruitment/repository/RecruitmentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zerobase/recruitment/repository/RecruitmentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zerobase/recruitment/repository/ResumeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zerobase/recruitment/repository/ResumeRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zerobase/recruitment/service/RecruitService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zerobase/recruitment/service/RecruitService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zerobase/recruitment/service/ResumeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zerobase/recruitment/service/ResumeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +73,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="001-Recruit-CRUD" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -79,26 +86,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.Build recruitment-proj.executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Spring Boot.RecruitmentApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;001-Recruit-CRUD&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/user/Documents/programming_file/server/spring-project/recruitment-proj&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.Build recruitment-proj.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.RecruitmentApplication.executor": "Run",
+    "git-widget-placeholder": "002-Resume-CRUD",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/user/Documents/programming_file/server/spring-project/recruitment-proj",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="recruitment-proj" />
@@ -141,7 +148,7 @@
       <workItem from="1718438023730" duration="413000" />
       <workItem from="1718438443414" duration="3901000" />
       <workItem from="1718462277938" duration="19502000" />
-      <workItem from="1718607833452" duration="3248000" />
+      <workItem from="1718607833452" duration="19162000" />
     </task>
     <task id="LOCAL-00001" summary="feat : 001 Main-Setting : 프로젝트 기본 설정 및 엔티티 세팅">
       <option name="closed" value="true" />
@@ -159,7 +166,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718514274385</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="feat : 003 Resume-CRUD : 이력서 작성/저장, 조회, 수정, 삭제 기능 구현">
+      <option name="closed" value="true" />
+      <created>1718611626610</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1718611626610</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,6 +194,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat : 001 Main-Setting : 프로젝트 기본 설정 및 엔티티 세팅" />
     <MESSAGE value="feat : 002 Recruit-CRUD : 채용 공고 저장, 조회, 수정, 삭제 기능 구현" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat : 002 Recruit-CRUD : 채용 공고 저장, 조회, 수정, 삭제 기능 구현" />
+    <MESSAGE value="feat : 003 Resume-CRUD : 이력서 작성/저장, 조회, 수정, 삭제 기능 구현" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat : 003 Resume-CRUD : 이력서 작성/저장, 조회, 수정, 삭제 기능 구현" />
   </component>
 </project>
