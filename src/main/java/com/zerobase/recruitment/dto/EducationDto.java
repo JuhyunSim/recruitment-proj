@@ -17,14 +17,15 @@ import java.util.List;
 @Getter
 public class EducationDto {
 
-    @Enumerated(EnumType.STRING)
-    private Degree degree;
+    private Integer degree;
+    private Integer code;
     private String graduateSchoolNames;
 
     public Education toEntity() {
         return Education.builder()
                 .degree(this.degree)
                 .graduateSchoolNames(this.graduateSchoolNames)
+                .code(code)
                 .build();
     }
 }

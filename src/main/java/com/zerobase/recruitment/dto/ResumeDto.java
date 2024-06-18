@@ -1,16 +1,10 @@
 package com.zerobase.recruitment.dto;
 
-import com.zerobase.recruitment.entity.Education;
-import com.zerobase.recruitment.entity.MemberEntity;
 import com.zerobase.recruitment.entity.ResumeEntity;
 import com.zerobase.recruitment.enums.ResumeStatus;
-import com.zerobase.recruitment.util.EducationListJsonConverter;
-import jakarta.persistence.*;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
-import org.hibernate.annotations.CreationTimestamp;
-import org.hibernate.annotations.UpdateTimestamp;
 
 import java.time.LocalDateTime;
 import java.util.List;
